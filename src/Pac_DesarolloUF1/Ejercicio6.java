@@ -17,6 +17,7 @@ public class Ejercicio6 {
 		//numeros
 		int a,b,c;
 		
+		//lectura de numeros
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("Por favor introduce el primer numero");
@@ -40,7 +41,6 @@ public class Ejercicio6 {
 			System.out.println("El segundo numero es mayor que el primer numero");
 			
 		}
-		
 		
 		//suma
 		
