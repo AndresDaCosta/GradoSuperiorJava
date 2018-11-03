@@ -7,15 +7,17 @@ public class Libro {
 	private final String isbn;
 	private int num_pags;
 	private String editorial;
+	private String autor;
 	
+
 	//builder with atributes
-	public Libro(String isbn, String titulo, int num_pags, String editorial) {
+	public Libro(String isbn, String titulo, int num_pags, String editorial, String autor) {
 		
 		this.isbn = isbn;
 		this.titulo = titulo;
 		this.num_pags = num_pags;
 		this.editorial = editorial;
-		
+		this.autor = autor;
 		
 	}	
 	
@@ -28,8 +30,7 @@ public class Libro {
 
 	@Override
 	public String toString() {
-		return "Libro [titulo=" + titulo + ", isbn=" + isbn + ", num_pags=" + num_pags + ", editorial=" + editorial
-				+ "]";
+		return " " + isbn + " - " + titulo + " - " + autor + " - " + editorial +"";
 	}
 
 	public String getTitulo() {
@@ -54,6 +55,13 @@ public class Libro {
 
 	public void setEditorial(String editorial) {
 		this.editorial = editorial;
+	}
+	public String getAutor() {
+		return autor;
+	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
 	}
 
 	
