@@ -41,23 +41,49 @@ public class UtilesArrays {
 		
 		
 	}
-	public static String alreves(String into) {
+	
+	public static int[] alreves(int[] entrada) {
 		
-		String out = new String();
+		int[] vuelta = new int[entrada.length];
 		
-		
-		
-		
-		for(int i = (into.length()-1); i >= 0; i --) {
+		for(int i = entrada.length; i < 0; i --) {
 			
-			out += into.charAt(i);
+			
+			vuelta[(i - entrada.length)] = entrada[i];
+			
+		}
+		
+		return vuelta;
+	}
+	
+	public static int[] arrayTam(int tam) {
+		
+		int[] vuelta = new int[tam];
+		
+		
+		for (int i = 0; i < vuelta.length; i ++) {
+			
+			vuelta[i] = i;
+			
+		}
+		
+		return vuelta;
+		
+	}
+	public static int[] multiplica(int [] in1, int[] in2) {
+		
+		int[] vuelta = new int[in1.length];
+		
+		for(int i = 0; i < in1.length; i++) {
+			
+			
+			vuelta[i] = in1[i] * in2[i];
 			
 			
 		}
 		
 		
-		
-		return out;
+		return vuelta;
 		
 	}
 	
