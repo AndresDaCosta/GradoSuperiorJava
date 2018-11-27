@@ -17,7 +17,7 @@ public class Radiobutton extends JFrame{
 	//construnctor por defecto de la ventana
 	public Radiobutton() {
 		
-		
+		//s
 		JFrame frame = new JFrame("Radio Buttons");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
