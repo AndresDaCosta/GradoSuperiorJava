@@ -2,6 +2,7 @@ package interfacesGraficas;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -34,22 +35,27 @@ public class ButtonNumeros {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		frame.setVisible(true);
-		frame.setSize(500, 500);
-		frame.add(paint(),BorderLayout.CENTER);
+		frame.setSize(1000, 1000);
+		frame.add(paint());
+		
+		
 		
 	}
 	public static  JPanel paint() {
 		
 		int numero;
 		JPanel panel = new JPanel();
+		
+		panel.setBounds(0, 0, 600, 400);
+		
 		JButton boton1, boton2, boton3,boton4, boton5, boton6,boton7, boton8, boton9;
 		
 		
 		JLabel numlab = new JLabel();
-		numlab.setAlignmentX(500);
-		numlab.setAlignmentY(500);
-		numlab.setText("hola mundo");
+		numlab.setText("Hola mundo");
 		panel.add(numlab);
+		
+		
 		
 		boton1 = new JButton("1");
 		panel.add(boton1);
@@ -75,7 +81,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton1);
-            	numlab.setText("1");
+            	numlab.setText("el numero es 1");
             	                
             }
         });
@@ -84,7 +90,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton2);
-            	numlab.setText("2");
+            	numlab.setText("el numero es 2");
             	                
             }
         });
@@ -93,7 +99,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton3);
-            	numlab.setText("3");
+            	numlab.setText("el numero es 3");
             	                
             }
         });
@@ -103,7 +109,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton4);
-            	numlab.setText("4");
+            	numlab.setText("el numero es 4");
             	                
             }
         });
@@ -112,7 +118,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton5);
-            	numlab.setText("5");
+            	numlab.setText("el numero es 5");
             	                
             }
         });
@@ -121,7 +127,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton6);
-            	numlab.setText("6");
+            	numlab.setText("el numero es 6");
             	                
             }
         });
@@ -130,7 +136,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton7);
-            	numlab.setText("7");
+            	numlab.setText("el numero es 7");
             	                
             }
         });
@@ -139,7 +145,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton8);
-            	numlab.setText("8");
+            	numlab.setText("el numero es 8");
             	                
             }
         });
@@ -148,7 +154,7 @@ public class ButtonNumeros {
             public void actionPerformed(ActionEvent e) {
                 
             	deactiveButton(boton9);
-            	numlab.setText("9");
+            	numlab.setText("el numero es 9");
             	                
             }
         });
